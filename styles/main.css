@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Exo;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #161623;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+    background: rgba(255, 0, 0, 0);
+    z-index: 1;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container::before {
+    content: '';
+    position: absolute;
+    top: -1400px;
+    left: -600px;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 1000px;
+    background: linear-gradient(rgb(24, 24, 24), rgb(39, 39, 39));
+    box-shadow: -80px 12px 180px rgb(228, 151, 37);
+}
+
+#container::after {
+    content: '';
+    position: relative;
+    top: 100px;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(rgb(34, 33, 33), rgb(46, 53, 49));
+    box-shadow: 10px 10px 30px rgb(219, 121, 41);
+}
+
+
+
+#controlArea {
+    position: relative;
+    width: 150px;
+    min-width: 150px;
+    height: 640px;
+    min-height: 640px;
+    margin-right: 20px;
+    color: white;
+}
+
+#graphArea {
+    position: relative;
+    width: 740px;
+    min-width: 740px;
+    height: 640px;
+    min-height: 640px;
+}
+
+.glass {
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+#canvas {
+    position: relative;
+    width: 740px;
+    min-width: 740px;
+    height: 640px;
+    min-height: 640px;
+    border: 1px solid rgba(129, 123, 123, 0.541);
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+}
+
+input[type=button] {
+    width: 145px;
+    min-width: 145px;
+    height: 50px;
+    min-height: 50px;
+    color: white;
+    font-size: 1.3em;
+    margin: 2px 2px;
+}
+
+input[type=button]:hover {
+    color: black;
+}
+
+input[type=range] {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -3000;
+}
+
+.dominant {
+    z-index: 3000 !important;
+}
+
+.active {
+    background: rgba(255, 108, 108, 0.3);
+}
