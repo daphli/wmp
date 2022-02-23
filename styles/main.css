@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Exo;
+}
+
+body {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    background: rgba(255, 0, 0, 0);
+    z-index: 1;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.highlight {
+    color:rgb(86, 187, 162);
+}
+
+#canvas {
+    position: relative;
+    width: 740px;
+    min-width: 740px;
+    height: 640px;
+    min-height: 640px;
+    border: 1px solid rgba(129, 123, 123, 0.5);
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    cursor: crosshair;
+}
+
+.active {
+    color:rgb(86, 187, 162) !important;
+    background:rgba(220, 220, 220, 0.1);
+}
+
+.tool {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.tool:hover {
+    color:rgba(0, 0, 0, 1.0);
+}
